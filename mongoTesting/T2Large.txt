@@ -1,0 +1,1107 @@
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$ clear
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$ bash script
+Running ab benchmark with 1 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 1 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 1 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:36:28:428 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:36:38:293 10 sec: 6077 operations; 607.7 current ops/sec; est completion in 7 second [INSERT: Count=6077, Max=129599, Min=1260, Avg=1433.38, 90=1490, 99=2799, 99.9=6831, 99.99=11759]
+2020-12-27 01:36:43:644 15 sec: 10000 operations; 733.13 current ops/sec; [CLEANUP: Count=1, Max=2285, Min=2284, Avg=2285, 90=2285, 99=2285, 99.9=2285, 99.99=2285] [INSERT: Count=3923, Max=10879, Min=1252, Avg=1355.07, 90=1377, 99=1895, 99.9=7223, 99.99=10879]
+[OVERALL], RunTime(ms), 15360
+[OVERALL], Throughput(ops/sec), 651.0416666666666
+[TOTAL_GCS_Copy], Count, 44
+[TOTAL_GC_TIME_Copy], Time(ms), 42
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.2734375
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 44
+[TOTAL_GC_TIME], Time(ms), 42
+[TOTAL_GC_TIME_%], Time(%), 0.2734375
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2285.0
+[CLEANUP], MinLatency(us), 2284
+[CLEANUP], MaxLatency(us), 2285
+[CLEANUP], 95thPercentileLatency(us), 2285
+[CLEANUP], 99thPercentileLatency(us), 2285
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 1402.6562
+[INSERT], MinLatency(us), 1252
+[INSERT], MaxLatency(us), 129599
+[INSERT], 95thPercentileLatency(us), 1554
+[INSERT], 99thPercentileLatency(us), 2389
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1 -p operationcount=10000 -threads 1 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1 -p operationcount=10000 -threads 1 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:36:54:198 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:37:04:080 10 sec: 5643 operations; 564.3 current ops/sec; est completion in 8 second [READ: Count=2796, Max=117887, Min=1285, Avg=1563.07, 90=1676, 99=3783, 99.9=8015, 99.99=117887] [UPDATE: Count=2859, Max=21199, Min=1309, Avg=1528.11, 90=1657, 99=3413, 99.9=9463, 99.99=21199]
+2020-12-27 01:37:10:259 16 sec: 10000 operations; 705.02 current ops/sec; [READ: Count=2173, Max=5899, Min=1275, Avg=1396.07, 90=1427, 99=1992, 99.9=4355, 99.99=5899] [CLEANUP: Count=1, Max=1920, Min=1920, Avg=1920, 90=1920, 99=1920, 99.9=1920, 99.99=1920] [UPDATE: Count=2172, Max=9679, Min=1289, Avg=1418.02, 90=1444, 99=2004, 99.9=5611, 99.99=9679]
+[OVERALL], RunTime(ms), 16185
+[OVERALL], Throughput(ops/sec), 617.8560395427866
+[TOTAL_GCS_Copy], Count, 60
+[TOTAL_GC_TIME_Copy], Time(ms), 51
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.31510658016682114
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 60
+[TOTAL_GC_TIME], Time(ms), 51
+[TOTAL_GC_TIME_%], Time(%), 0.31510658016682114
+[READ], Operations, 4969
+[READ], AverageLatency(us), 1490.0418595290803
+[READ], MinLatency(us), 1275
+[READ], MaxLatency(us), 117887
+[READ], 95thPercentileLatency(us), 1809
+[READ], 99thPercentileLatency(us), 2889
+[READ], Return=OK, 4969
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1920.0
+[CLEANUP], MinLatency(us), 1920
+[CLEANUP], MaxLatency(us), 1920
+[CLEANUP], 95thPercentileLatency(us), 1920
+[CLEANUP], 99thPercentileLatency(us), 1920
+[UPDATE], Operations, 5031
+[UPDATE], AverageLatency(us), 1480.5813953488373
+[UPDATE], MinLatency(us), 1289
+[UPDATE], MaxLatency(us), 21199
+[UPDATE], 95thPercentileLatency(us), 1750
+[UPDATE], 99thPercentileLatency(us), 2805
+[UPDATE], Return=OK, 5031
+Running ab benchmark with 2 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 2 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 2 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:37:40:872 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:37:49:328 8 sec: 10000 operations; 1165.37 current ops/sec; [CLEANUP: Count=2, Max=2323, Min=7, Avg=1165, 90=2323, 99=2323, 99.9=2323, 99.99=2323] [INSERT: Count=10000, Max=143999, Min=1249, Avg=1456.05, 90=1513, 99=3311, 99.9=7111, 99.99=136831]
+[OVERALL], RunTime(ms), 8590
+[OVERALL], Throughput(ops/sec), 1164.1443538998835
+[TOTAL_GCS_Copy], Count, 44
+[TOTAL_GC_TIME_Copy], Time(ms), 43
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.5005820721769499
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 44
+[TOTAL_GC_TIME], Time(ms), 43
+[TOTAL_GC_TIME_%], Time(%), 0.5005820721769499
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 1165.0
+[CLEANUP], MinLatency(us), 7
+[CLEANUP], MaxLatency(us), 2323
+[CLEANUP], 95thPercentileLatency(us), 2323
+[CLEANUP], 99thPercentileLatency(us), 2323
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 1456.0527
+[INSERT], MinLatency(us), 1249
+[INSERT], MaxLatency(us), 143999
+[INSERT], 95thPercentileLatency(us), 1695
+[INSERT], 99thPercentileLatency(us), 3311
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2 -p operationcount=10000 -threads 2 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2 -p operationcount=10000 -threads 2 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:37:59:993 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark2
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:38:08:813 8 sec: 10000 operations; 1116.69 current ops/sec; [READ: Count=5022, Max=135679, Min=1243, Avg=1530.2, 90=1686, 99=3935, 99.9=7131, 99.99=9063] [CLEANUP: Count=2, Max=2107, Min=18, Avg=1062.5, 90=2107, 99=2107, 99.9=2107, 99.99=2107] [UPDATE: Count=4978, Max=137343, Min=1267, Avg=1526.58, 90=1658, 99=3391, 99.9=6507, 99.99=137343]
+[OVERALL], RunTime(ms), 8962
+[OVERALL], Throughput(ops/sec), 1115.822361080116
+[TOTAL_GCS_Copy], Count, 61
+[TOTAL_GC_TIME_Copy], Time(ms), 53
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.5913858513724615
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 61
+[TOTAL_GC_TIME], Time(ms), 53
+[TOTAL_GC_TIME_%], Time(%), 0.5913858513724615
+[READ], Operations, 5022
+[READ], AverageLatency(us), 1530.204898446834
+[READ], MinLatency(us), 1243
+[READ], MaxLatency(us), 135679
+[READ], 95thPercentileLatency(us), 2012
+[READ], 99thPercentileLatency(us), 3935
+[READ], Return=OK, 5022
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 1062.5
+[CLEANUP], MinLatency(us), 18
+[CLEANUP], MaxLatency(us), 2107
+[CLEANUP], 95thPercentileLatency(us), 2107
+[CLEANUP], 99thPercentileLatency(us), 2107
+[UPDATE], Operations, 4978
+[UPDATE], AverageLatency(us), 1526.5777420650863
+[UPDATE], MinLatency(us), 1267
+[UPDATE], MaxLatency(us), 137343
+[UPDATE], 95thPercentileLatency(us), 1944
+[UPDATE], 99thPercentileLatency(us), 3391
+[UPDATE], Return=OK, 4978
+Running ab benchmark with 4 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 4 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 4 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:38:39:428 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:38:44:622 5 sec: 10000 operations; 1877.93 current ops/sec; [CLEANUP: Count=4, Max=2415, Min=1, Avg=605.75, 90=2415, 99=2415, 99.9=2415, 99.99=2415] [INSERT: Count=10000, Max=171263, Min=1249, Avg=1627.67, 90=1840, 99=4759, 99.9=11111, 99.99=167423]
+[OVERALL], RunTime(ms), 5331
+[OVERALL], Throughput(ops/sec), 1875.8206715438005
+[TOTAL_GCS_Copy], Count, 47
+[TOTAL_GC_TIME_Copy], Time(ms), 49
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.9191521290564622
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 47
+[TOTAL_GC_TIME], Time(ms), 49
+[TOTAL_GC_TIME_%], Time(%), 0.9191521290564622
+[CLEANUP], Operations, 4
+[CLEANUP], AverageLatency(us), 605.75
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 2415
+[CLEANUP], 95thPercentileLatency(us), 2415
+[CLEANUP], 99thPercentileLatency(us), 2415
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 1627.6746
+[INSERT], MinLatency(us), 1249
+[INSERT], MaxLatency(us), 171263
+[INSERT], 95thPercentileLatency(us), 2393
+[INSERT], 99thPercentileLatency(us), 4759
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4 -p operationcount=10000 -threads 4 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4 -p operationcount=10000 -threads 4 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:38:55:228 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark4
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:39:00:508 5 sec: 10000 operations; 1845.36 current ops/sec; [READ: Count=4960, Max=153855, Min=1245, Avg=1700.06, 90=2046, 99=5295, 99.9=10535, 99.99=153855] [CLEANUP: Count=4, Max=2513, Min=1, Avg=630.5, 90=2513, 99=2513, 99.9=2513, 99.99=2513] [UPDATE: Count=5040, Max=161151, Min=1265, Avg=1623.62, 90=1961, 99=5191, 99.9=9999, 99.99=13687]
+[OVERALL], RunTime(ms), 5426
+[OVERALL], Throughput(ops/sec), 1842.9782528566163
+[TOTAL_GCS_Copy], Count, 64
+[TOTAL_GC_TIME_Copy], Time(ms), 53
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.9767784740140067
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 64
+[TOTAL_GC_TIME], Time(ms), 53
+[TOTAL_GC_TIME_%], Time(%), 0.9767784740140067
+[READ], Operations, 4960
+[READ], AverageLatency(us), 1700.0576612903226
+[READ], MinLatency(us), 1245
+[READ], MaxLatency(us), 153855
+[READ], 95thPercentileLatency(us), 2635
+[READ], 99thPercentileLatency(us), 5295
+[READ], Return=OK, 4960
+[CLEANUP], Operations, 4
+[CLEANUP], AverageLatency(us), 630.5
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 2513
+[CLEANUP], 95thPercentileLatency(us), 2513
+[CLEANUP], 99thPercentileLatency(us), 2513
+[UPDATE], Operations, 5040
+[UPDATE], AverageLatency(us), 1623.6238095238095
+[UPDATE], MinLatency(us), 1265
+[UPDATE], MaxLatency(us), 161151
+[UPDATE], 95thPercentileLatency(us), 2593
+[UPDATE], 99thPercentileLatency(us), 5191
+[UPDATE], Return=OK, 5040
+Running ab benchmark with 8 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 8 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 8 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:39:31:143 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:39:35:631 4 sec: 10000 operations; 2170.61 current ops/sec; [CLEANUP: Count=8, Max=2889, Min=1, Avg=362.75, 90=7, 99=2889, 99.9=2889, 99.99=2889] [INSERT: Count=10000, Max=203775, Min=1309, Avg=2689.03, 90=4583, 99=8543, 99.9=17615, 99.99=200703]
+[OVERALL], RunTime(ms), 4620
+[OVERALL], Throughput(ops/sec), 2164.5021645021643
+[TOTAL_GCS_Copy], Count, 50
+[TOTAL_GC_TIME_Copy], Time(ms), 47
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.0173160173160172
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 50
+[TOTAL_GC_TIME], Time(ms), 47
+[TOTAL_GC_TIME_%], Time(%), 1.0173160173160172
+[CLEANUP], Operations, 8
+[CLEANUP], AverageLatency(us), 362.75
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 2889
+[CLEANUP], 95thPercentileLatency(us), 2889
+[CLEANUP], 99thPercentileLatency(us), 2889
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 2689.0254
+[INSERT], MinLatency(us), 1309
+[INSERT], MaxLatency(us), 203775
+[INSERT], 95thPercentileLatency(us), 6127
+[INSERT], 99thPercentileLatency(us), 8543
+[INSERT], Return=OK, 10000
+ java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8 -p operationcount=10000 -threads 8 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8 -p operationcount=10000 -threads 8 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:39:46:213 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark8
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:39:51:020 4 sec: 10000 operations; 2032.11 current ops/sec; [READ: Count=4933, Max=159231, Min=1321, Avg=2989.85, 90=5475, 99=10895, 99.9=35807, 99.99=159231] [CLEANUP: Count=8, Max=2827, Min=1, Avg=354.75, 90=5, 99=2827, 99.9=2827, 99.99=2827] [UPDATE: Count=5067, Max=158079, Min=1299, Avg=2860.03, 90=5311, 99=10951, 99.9=16703, 99.99=157311]
+[OVERALL], RunTime(ms), 4927
+[OVERALL], Throughput(ops/sec), 2029.6326364927947
+[TOTAL_GCS_Copy], Count, 68
+[TOTAL_GC_TIME_Copy], Time(ms), 57
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.156890602800893
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 68
+[TOTAL_GC_TIME], Time(ms), 57
+[TOTAL_GC_TIME_%], Time(%), 1.156890602800893
+[READ], Operations, 4933
+[READ], AverageLatency(us), 2989.8497871477803
+[READ], MinLatency(us), 1321
+[READ], MaxLatency(us), 159231
+[READ], 95thPercentileLatency(us), 6755
+[READ], 99thPercentileLatency(us), 10895
+[READ], Return=OK, 4933
+[CLEANUP], Operations, 8
+[CLEANUP], AverageLatency(us), 354.75
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 2827
+[CLEANUP], 95thPercentileLatency(us), 2827
+[CLEANUP], 99thPercentileLatency(us), 2827
+[UPDATE], Operations, 5067
+[UPDATE], AverageLatency(us), 2860.0282218275115
+[UPDATE], MinLatency(us), 1299
+[UPDATE], MaxLatency(us), 158079
+[UPDATE], 95thPercentileLatency(us), 6671
+[UPDATE], 99thPercentileLatency(us), 10951
+[UPDATE], Return=OK, 5067
+Running ab benchmark with 16 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 16 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 16 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:40:21:686 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:40:26:686 5 sec: 10000 operations; 1954.65 current ops/sec; [CLEANUP: Count=16, Max=8183, Min=1, Avg=512.56, 90=1, 99=8183, 99.9=8183, 99.99=8183] [INSERT: Count=10000, Max=293631, Min=1375, Avg=6215.99, 90=9063, 99=16231, 99.9=265471, 99.99=287487]
+[OVERALL], RunTime(ms), 5124
+[OVERALL], Throughput(ops/sec), 1951.60031225605
+[TOTAL_GCS_Copy], Count, 54
+[TOTAL_GC_TIME_Copy], Time(ms), 52
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.014832162373146
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 54
+[TOTAL_GC_TIME], Time(ms), 52
+[TOTAL_GC_TIME_%], Time(%), 1.014832162373146
+[CLEANUP], Operations, 16
+[CLEANUP], AverageLatency(us), 512.5625
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 8183
+[CLEANUP], 95thPercentileLatency(us), 5
+[CLEANUP], 99thPercentileLatency(us), 8183
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 6215.9923
+[INSERT], MinLatency(us), 1375
+[INSERT], MaxLatency(us), 293631
+[INSERT], 95thPercentileLatency(us), 10239
+[INSERT], 99thPercentileLatency(us), 16231
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16 -p operationcount=10000 -threads 16 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16 -p operationcount=10000 -threads 16 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:40:37:337 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark16
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:40:42:916 5 sec: 10000 operations; 1754.69 current ops/sec; [READ: Count=5004, Max=200703, Min=1394, Avg=7300.22, 90=11495, 99=20287, 99.9=193663, 99.99=195711] [CLEANUP: Count=16, Max=3749, Min=1, Avg=235.44, 90=1, 99=3749, 99.9=3749, 99.99=3749] [UPDATE: Count=4996, Max=185983, Min=1365, Avg=6884.36, 90=11303, 99=19487, 99.9=46879, 99.99=185983]
+[OVERALL], RunTime(ms), 5708
+[OVERALL], Throughput(ops/sec), 1751.927119831815
+[TOTAL_GCS_Copy], Count, 74
+[TOTAL_GC_TIME_Copy], Time(ms), 66
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.156271899088998
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 74
+[TOTAL_GC_TIME], Time(ms), 66
+[TOTAL_GC_TIME_%], Time(%), 1.156271899088998
+[READ], Operations, 5004
+[READ], AverageLatency(us), 7300.224820143885
+[READ], MinLatency(us), 1394
+[READ], MaxLatency(us), 200703
+[READ], 95thPercentileLatency(us), 13535
+[READ], 99thPercentileLatency(us), 20287
+[READ], Return=OK, 5004
+[CLEANUP], Operations, 16
+[CLEANUP], AverageLatency(us), 235.4375
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 3749
+[CLEANUP], 95thPercentileLatency(us), 4
+[CLEANUP], 99thPercentileLatency(us), 3749
+[UPDATE], Operations, 4996
+[UPDATE], AverageLatency(us), 6884.357886309047
+[UPDATE], MinLatency(us), 1365
+[UPDATE], MaxLatency(us), 185983
+[UPDATE], 95thPercentileLatency(us), 13383
+[UPDATE], 99thPercentileLatency(us), 19487
+[UPDATE], Return=OK, 4996
+Running ab benchmark with 32 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 32 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 32 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:41:13:574 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:41:18:823 5 sec: 10000 operations; 1861.16 current ops/sec; [CLEANUP: Count=32, Max=6247, Min=1, Avg=196.53, 90=1, 99=6247, 99.9=6247, 99.99=6247] [INSERT: Count=10000, Max=528895, Min=1473, Avg=13146.35, 90=15999, 99=32959, 99.9=492031, 99.99=525311]
+[OVERALL], RunTime(ms), 5384
+[OVERALL], Throughput(ops/sec), 1857.3551263001486
+[TOTAL_GCS_Copy], Count, 61
+[TOTAL_GC_TIME_Copy], Time(ms), 69
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.2815750371471024
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 61
+[TOTAL_GC_TIME], Time(ms), 69
+[TOTAL_GC_TIME_%], Time(%), 1.2815750371471024
+[CLEANUP], Operations, 32
+[CLEANUP], AverageLatency(us), 196.53125
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 6247
+[CLEANUP], 95thPercentileLatency(us), 6
+[CLEANUP], 99thPercentileLatency(us), 6247
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 13146.3497
+[INSERT], MinLatency(us), 1473
+[INSERT], MaxLatency(us), 528895
+[INSERT], 95thPercentileLatency(us), 18639
+[INSERT], 99thPercentileLatency(us), 32959
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32 -p operationcount=10000 -threads 32 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32 -p operationcount=10000 -threads 32 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:41:29:470 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark32
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:41:36:168 6 sec: 10000 operations; 1466.06 current ops/sec; [READ: Count=4959, Max=254463, Min=1621, Avg=18148.44, 90=25487, 99=59423, 99.9=250879, 99.99=254463] [CLEANUP: Count=32, Max=12767, Min=0, Avg=400.31, 90=1, 99=12767, 99.9=12767, 99.99=12767] [UPDATE: Count=5041, Max=281599, Min=1519, Avg=16940.45, 90=24511, 99=45887, 99.9=240511, 99.99=253567]
+[OVERALL], RunTime(ms), 6826
+[OVERALL], Throughput(ops/sec), 1464.986815118664
+[TOTAL_GCS_Copy], Count, 83
+[TOTAL_GC_TIME_Copy], Time(ms), 90
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.3184881336067975
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 83
+[TOTAL_GC_TIME], Time(ms), 90
+[TOTAL_GC_TIME_%], Time(%), 1.3184881336067975
+[READ], Operations, 4959
+[READ], AverageLatency(us), 18148.44323452309
+[READ], MinLatency(us), 1621
+[READ], MaxLatency(us), 254463
+[READ], 95thPercentileLatency(us), 30159
+[READ], 99thPercentileLatency(us), 59423
+[READ], Return=OK, 4959
+[CLEANUP], Operations, 32
+[CLEANUP], AverageLatency(us), 400.3125
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 12767
+[CLEANUP], 95thPercentileLatency(us), 5
+[CLEANUP], 99thPercentileLatency(us), 12767
+[UPDATE], Operations, 5041
+[UPDATE], AverageLatency(us), 16940.45050585201
+[UPDATE], MinLatency(us), 1519
+[UPDATE], MaxLatency(us), 281599
+[UPDATE], 95thPercentileLatency(us), 28751
+[UPDATE], 99thPercentileLatency(us), 45887
+[UPDATE], Return=OK, 5041
+Running ab benchmark with 64 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 64 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 64 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:42:06:840 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:42:12:198 5 sec: 10000 operations; 1823.15 current ops/sec; [CLEANUP: Count=64, Max=12799, Min=0, Avg=201.23, 90=1, 99=11, 99.9=12799, 99.99=12799] [INSERT: Count=10000, Max=979967, Min=1424, Avg=26223.26, 90=36991, 99=65535, 99.9=935423, 99.99=963583]
+[OVERALL], RunTime(ms), 5497
+[OVERALL], Throughput(ops/sec), 1819.1740949608877
+[TOTAL_GCS_Copy], Count, 62
+[TOTAL_GC_TIME_Copy], Time(ms), 98
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.78279061306167
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 62
+[TOTAL_GC_TIME], Time(ms), 98
+[TOTAL_GC_TIME_%], Time(%), 1.78279061306167
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 201.234375
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 12799
+[CLEANUP], 95thPercentileLatency(us), 5
+[CLEANUP], 99thPercentileLatency(us), 11
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 26223.2626
+[INSERT], MinLatency(us), 1424
+[INSERT], MaxLatency(us), 979967
+[INSERT], 95thPercentileLatency(us), 42847
+[INSERT], 99thPercentileLatency(us), 65535
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64 -p operationcount=10000 -threads 64 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64 -p operationcount=10000 -threads 64 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:42:22:849 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark64
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:42:29:934 7 sec: 10000 operations; 1386 current ops/sec; [READ: Count=5049, Max=385535, Min=1609, Avg=37849.01, 90=62527, 99=113407, 99.9=384767, 99.99=385535] [CLEANUP: Count=64, Max=12439, Min=1, Avg=195.62, 90=1, 99=19, 99.9=12439, 99.99=12439] [UPDATE: Count=4951, Max=389119, Min=1572, Avg=36110.56, 90=61023, 99=107519, 99.9=383999, 99.99=389119]
+[OVERALL], RunTime(ms), 7225
+[OVERALL], Throughput(ops/sec), 1384.083044982699
+[TOTAL_GCS_Copy], Count, 84
+[TOTAL_GC_TIME_Copy], Time(ms), 150
+[TOTAL_GC_TIME_%_Copy], Time(%), 2.0761245674740483
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 84
+[TOTAL_GC_TIME], Time(ms), 150
+[TOTAL_GC_TIME_%], Time(%), 2.0761245674740483
+[READ], Operations, 5049
+[READ], AverageLatency(us), 37849.005347593586
+[READ], MinLatency(us), 1609
+[READ], MaxLatency(us), 385535
+[READ], 95thPercentileLatency(us), 73407
+[READ], 99thPercentileLatency(us), 113407
+[READ], Return=OK, 5049
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 195.625
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 12439
+[CLEANUP], 95thPercentileLatency(us), 1
+[CLEANUP], 99thPercentileLatency(us), 19
+[UPDATE], Operations, 4951
+[UPDATE], AverageLatency(us), 36110.55867501515
+[UPDATE], MinLatency(us), 1572
+[UPDATE], MaxLatency(us), 389119
+[UPDATE], 95thPercentileLatency(us), 72511
+[UPDATE], 99thPercentileLatency(us), 107519
+[UPDATE], Return=OK, 4951
+Running ab benchmark with 128 threads....
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 128 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 128 -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:43:00:631 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:43:07:463 6 sec: 10000 operations; 1434.72 current ops/sec; [CLEANUP: Count=128, Max=4815, Min=1, Avg=38.66, 90=1, 99=5, 99.9=4815, 99.99=4815] [INSERT: Count=10000, Max=539135, Min=1543, Avg=70748.59, 90=94527, 99=487935, 99.9=516607, 99.99=539135]
+[OVERALL], RunTime(ms), 6977
+[OVERALL], Throughput(ops/sec), 1433.2807797047442
+[TOTAL_GCS_Copy], Count, 55
+[TOTAL_GC_TIME_Copy], Time(ms), 132
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.8919306292102624
+[TOTAL_GCS_MarkSweepCompact], Count, 1
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 19
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.2723233481439014
+[TOTAL_GCs], Count, 56
+[TOTAL_GC_TIME], Time(ms), 151
+[TOTAL_GC_TIME_%], Time(%), 2.1642539773541634
+[CLEANUP], Operations, 128
+[CLEANUP], AverageLatency(us), 38.6640625
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 4815
+[CLEANUP], 95thPercentileLatency(us), 1
+[CLEANUP], 99thPercentileLatency(us), 5
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 70748.5901
+[INSERT], MinLatency(us), 1543
+[INSERT], MaxLatency(us), 539135
+[INSERT], 95thPercentileLatency(us), 108927
+[INSERT], 99thPercentileLatency(us), 487935
+[INSERT], Return=OK, 10000
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128 -p operationcount=10000 -threads 128 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128 -p operationcount=10000 -threads 128 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 01:43:18:136 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ip-172-31-4-150.us-east-2.compute.internal:27017/bechmark128
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 01:43:25:589 7 sec: 10000 operations; 1315.1 current ops/sec; [READ: Count=4961, Max=604159, Min=1537, Avg=79654.48, 90=105151, 99=590335, 99.9=601599, 99.99=604159] [CLEANUP: Count=128, Max=9479, Min=0, Avg=75.11, 90=1, 99=14, 99.9=9479, 99.99=9479] [UPDATE: Count=5039, Max=600575, Min=2102, Avg=78081.25, 90=101439, 99=588799, 99.9=597503, 99.99=600063]
+[OVERALL], RunTime(ms), 7614
+[OVERALL], Throughput(ops/sec), 1313.370107696349
+[TOTAL_GCS_Copy], Count, 68
+[TOTAL_GC_TIME_Copy], Time(ms), 195
+[TOTAL_GC_TIME_%_Copy], Time(%), 2.56107171000788
+[TOTAL_GCS_MarkSweepCompact], Count, 1
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 23
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.30207512477016024
+[TOTAL_GCs], Count, 69
+[TOTAL_GC_TIME], Time(ms), 218
+[TOTAL_GC_TIME_%], Time(%), 2.8631468347780404
+[READ], Operations, 4961
+[READ], AverageLatency(us), 79654.47712154807
+[READ], MinLatency(us), 1537
+[READ], MaxLatency(us), 604159
+[READ], 95thPercentileLatency(us), 129919
+[READ], 99thPercentileLatency(us), 590335
+[READ], Return=OK, 4961
+[CLEANUP], Operations, 128
+[CLEANUP], AverageLatency(us), 75.109375
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 9479
+[CLEANUP], 95thPercentileLatency(us), 1
+[CLEANUP], 99thPercentileLatency(us), 14
+[UPDATE], Operations, 5039
+[UPDATE], AverageLatency(us), 78081.25064496924
+[UPDATE], MinLatency(us), 2102
+[UPDATE], MaxLatency(us), 600575
+[UPDATE], 95thPercentileLatency(us), 121471
+[UPDATE], 99thPercentileLatency(us), 588799
+[UPDATE], Return=OK, 5039
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$

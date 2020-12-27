@@ -1,0 +1,95 @@
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$ clear
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$ ./bin/ycsb load mongodb -s -P workloads/workloada -p recordcount=10000 -threads 16 -p mongodb.url="mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3"
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 16 -p mongodb.url=mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3 -load
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=10000 -threads 16 -p mongodb.url=mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 00:52:17:377 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 00:52:22:267 5 sec: 10000 operations; 1994.42 current ops/sec; [CLEANUP: Count=16, Max=4247, Min=0, Avg=266.5, 90=1, 99=4247, 99.9=4247, 99.99=4247] [INSERT: Count=10000, Max=294655, Min=1409, Avg=6129.31, 90=8967, 99=14511, 99.9=259967, 99.99=293119]
+[OVERALL], RunTime(ms), 5025
+[OVERALL], Throughput(ops/sec), 1990.0497512437812
+[TOTAL_GCS_Copy], Count, 50
+[TOTAL_GC_TIME_Copy], Time(ms), 51
+[TOTAL_GC_TIME_%_Copy], Time(%), 1.0149253731343284
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 50
+[TOTAL_GC_TIME], Time(ms), 51
+[TOTAL_GC_TIME_%], Time(%), 1.0149253731343284
+[CLEANUP], Operations, 16
+[CLEANUP], AverageLatency(us), 266.5
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 4247
+[CLEANUP], 95thPercentileLatency(us), 5
+[CLEANUP], 99thPercentileLatency(us), 4247
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 6129.3123
+[INSERT], MinLatency(us), 1409
+[INSERT], MaxLatency(us), 294655
+[INSERT], 95thPercentileLatency(us), 10199
+[INSERT], 99thPercentileLatency(us), 14511
+[INSERT], Return=OK, 10000
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$ ./bin/ycsb run mongodb -s -P workloads/workloada -p  mongodb.url="mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3" -p operationcount=10000 -threads 2
+java -cp /home/austintolani/ycsb-mongodb-binding-0.17.0/mongodb-binding/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/conf:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/core-0.17.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongo-java-driver-3.8.0.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-async-driver-2.0.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-classic-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/logback-core-1.1.2.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/slf4j-api-1.7.25.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/snappy-java-1.1.7.1.jar:/home/austintolani/ycsb-mongodb-binding-0.17.0/lib/mongodb-binding-0.17.0.jar site.ycsb.Client -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3 -p operationcount=10000 -threads 2 -t
+Command line: -db site.ycsb.db.MongoDbClient -s -P workloads/workloada -p mongodb.url=mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3 -p operationcount=10000 -threads 2 -t
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2020-12-27 00:52:31:346 0 sec: 0 operations; est completion in 0 second
+mongo client connection created with mongodb://ec2-3-135-201-213.us-east-2.compute.amazonaws.com:27017/testdb3
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-27 00:52:39:891 8 sec: 10000 operations; 1151.81 current ops/sec; [READ: Count=5022, Max=27775, Min=1233, Avg=1471.75, 90=1571, 99=3961, 99.9=7063, 99.99=20895] [CLEANUP: Count=2, Max=2683, Min=5, Avg=1344, 90=2683, 99=2683, 99.9=2683, 99.99=2683] [UPDATE: Count=4978, Max=121855, Min=1246, Avg=1497.03, 90=1543, 99=2899, 99.9=7171, 99.99=121855]
+[OVERALL], RunTime(ms), 8685
+[OVERALL], Throughput(ops/sec), 1151.4104778353483
+[TOTAL_GCS_Copy], Count, 58
+[TOTAL_GC_TIME_Copy], Time(ms), 50
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.5757052389176741
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 58
+[TOTAL_GC_TIME], Time(ms), 50
+[TOTAL_GC_TIME_%], Time(%), 0.5757052389176741
+[READ], Operations, 5022
+[READ], AverageLatency(us), 1471.7542811628832
+[READ], MinLatency(us), 1233
+[READ], MaxLatency(us), 27775
+[READ], 95thPercentileLatency(us), 1855
+[READ], 99thPercentileLatency(us), 3961
+[READ], Return=OK, 5022
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 1344.0
+[CLEANUP], MinLatency(us), 5
+[CLEANUP], MaxLatency(us), 2683
+[CLEANUP], 95thPercentileLatency(us), 2683
+[CLEANUP], 99thPercentileLatency(us), 2683
+[UPDATE], Operations, 4978
+[UPDATE], AverageLatency(us), 1497.0333467255925
+[UPDATE], MinLatency(us), 1246
+[UPDATE], MaxLatency(us), 121855
+[UPDATE], 95thPercentileLatency(us), 1694
+[UPDATE], 99thPercentileLatency(us), 2899
+[UPDATE], Return=OK, 4978
+[austintolani@ip-172-31-39-184 ycsb-mongodb-binding-0.17.0]$

@@ -1,0 +1,607 @@
+[austintolani@ip-172-31-40-198 t2Medium]$ bash script
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      1
+Time taken for tests:   12.653 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    790.33 [#/sec] (mean)
+Time per request:       1.265 [ms] (mean)
+Time per request:       1.265 [ms] (mean, across all concurrent requests)
+Transfer rate:          3026.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      0      15
+Processing:     1    1   0.2      1      17
+Waiting:        1    1   0.2      1      17
+Total:          1    1   0.4      1      18
+ERROR: The median and mean for the initial connection time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      2
+  98%      2
+  99%      2
+ 100%     18 (longest request)
+Running ab benchmark with 100 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      100
+Time taken for tests:   2.012 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    4969.34 [#/sec] (mean)
+Time per request:       20.123 [ms] (mean)
+Time per request:       0.201 [ms] (mean, across all concurrent requests)
+Transfer rate:          19028.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    1   0.4      1      10
+Processing:     2   19   2.4     19      30
+Waiting:        1   18   2.4     19      30
+Total:          4   20   2.5     20      32
+
+Percentage of the requests served within a certain time (ms)
+  50%     20
+  66%     21
+  75%     22
+  80%     22
+  90%     23
+  95%     24
+  98%     25
+  99%     26
+ 100%     32 (longest request)
+Running ab benchmark with 200 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      200
+Time taken for tests:   1.876 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    5331.32 [#/sec] (mean)
+Time per request:       37.514 [ms] (mean)
+Time per request:       0.188 [ms] (mean, across all concurrent requests)
+Transfer rate:          20414.18 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    5  55.4      1    1034
+Processing:     5   28  69.3     23    1794
+Waiting:        1   28  69.2     23    1794
+Total:          6   33  89.7     24    1806
+
+Percentage of the requests served within a certain time (ms)
+  50%     24
+  66%     25
+  75%     26
+  80%     26
+  90%     28
+  95%     29
+  98%     37
+  99%    238
+ 100%   1806 (longest request)
+Running ab benchmark with 300 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      300
+Time taken for tests:   3.449 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    2899.09 [#/sec] (mean)
+Time per request:       103.481 [ms] (mean)
+Time per request:       0.345 [ms] (mean, across all concurrent requests)
+Transfer rate:          11100.89 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    5  56.6      2    1033
+Processing:     8   66 342.8     26    3438
+Waiting:        1   66 342.7     26    3438
+Total:          8   71 347.7     29    3444
+
+Percentage of the requests served within a certain time (ms)
+  50%     29
+  66%     29
+  75%     29
+  80%     30
+  90%     30
+  95%     31
+  98%    238
+  99%   1757
+ 100%   3444 (longest request)
+Running ab benchmark with 400 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      400
+Time taken for tests:   2.076 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    4817.70 [#/sec] (mean)
+Time per request:       83.027 [ms] (mean)
+Time per request:       0.208 [ms] (mean, across all concurrent requests)
+Transfer rate:          18447.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    6  67.4      1    1034
+Processing:     9   57 226.6     21    1742
+Waiting:        1   57 226.6     21    1742
+Total:         10   64 238.8     23    1861
+
+Percentage of the requests served within a certain time (ms)
+  50%     23
+  66%     24
+  75%     25
+  80%     26
+  90%     27
+  95%     30
+  98%   1041
+  99%   1729
+ 100%   1861 (longest request)
+Running ab benchmark with 500 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      500
+Time taken for tests:   6.960 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    1436.80 [#/sec] (mean)
+Time per request:       347.996 [ms] (mean)
+Time per request:       0.696 [ms] (mean, across all concurrent requests)
+Transfer rate:          5501.65 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    8  75.4      1    1029
+Processing:    11  164 851.9     24    6944
+Waiting:        1  163 851.9     24    6944
+Total:         12  171 856.7     25    6952
+
+Percentage of the requests served within a certain time (ms)
+  50%     25
+  66%     27
+  75%     30
+  80%     30
+  90%     34
+  95%    228
+  98%   4722
+  99%   4786
+ 100%   6952 (longest request)
+Running ab benchmark with 600 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      600
+Time taken for tests:   7.269 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    1375.70 [#/sec] (mean)
+Time per request:       436.141 [ms] (mean)
+Time per request:       0.727 [ms] (mean, across all concurrent requests)
+Transfer rate:          5267.70 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    6  59.5      2    1035
+Processing:    12  188 796.3     27    7245
+Waiting:        1  188 796.1     27    7245
+Total:         12  194 799.9     29    7261
+
+Percentage of the requests served within a certain time (ms)
+  50%     29
+  66%     30
+  75%     31
+  80%     32
+  90%     36
+  95%    265
+  98%   3564
+  99%   3584
+ 100%   7261 (longest request)
+Running ab benchmark with 700 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      700
+Time taken for tests:   7.029 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    1422.59 [#/sec] (mean)
+Time per request:       492.060 [ms] (mean)
+Time per request:       0.703 [ms] (mean, across all concurrent requests)
+Transfer rate:          5447.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    8  73.9      2    1035
+Processing:    13  160 627.7     24    7011
+Waiting:        1  160 627.6     24    7010
+Total:         13  168 633.8     26    7023
+
+Percentage of the requests served within a certain time (ms)
+  50%     26
+  66%     26
+  75%     28
+  80%     29
+  90%     36
+  95%   1039
+  98%   3474
+  99%   3491
+ 100%   7023 (longest request)
+Running ab benchmark with 800 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      800
+Time taken for tests:   14.472 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    691.01 [#/sec] (mean)
+Time per request:       1157.725 [ms] (mean)
+Time per request:       1.447 [ms] (mean, across all concurrent requests)
+Transfer rate:          2645.95 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   20 127.9      2    1035
+Processing:    15  378 1578.8     29   14440
+Waiting:        1  378 1578.7     28   14440
+Total:         15  397 1590.8     31   14459
+
+Percentage of the requests served within a certain time (ms)
+  50%     31
+  66%     41
+  75%     43
+  80%     45
+  90%    212
+  95%   2741
+  98%   7061
+  99%   7306
+ 100%  14459 (longest request)
+Running ab benchmark with 900 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      900
+Time taken for tests:   14.480 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    690.60 [#/sec] (mean)
+Time per request:       1303.205 [ms] (mean)
+Time per request:       1.448 [ms] (mean, across all concurrent requests)
+Transfer rate:          2644.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1   16 114.9      2    1034
+Processing:    16  553 2225.5     26   14454
+Waiting:        1  553 2225.4     26   14453
+Total:         17  569 2230.1     28   14470
+
+Percentage of the requests served within a certain time (ms)
+  50%     28
+  66%     30
+  75%     32
+  80%     33
+  90%    233
+  95%   7245
+  98%   7537
+  99%  14454
+ 100%  14470 (longest request)
+Running ab benchmark with 1000 concurrent requests....
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ip-172-31-26-102.us-east-2.compute.internal (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.46
+Server Hostname:        ip-172-31-26-102.us-east-2.compute.internal
+Server Port:            80
+
+Document Path:          /
+Document Length:        3630 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   14.931 seconds
+Complete requests:      10000
+Failed requests:        0
+Non-2xx responses:      10000
+Total transferred:      39210000 bytes
+HTML transferred:       36300000 bytes
+Requests per second:    669.74 [#/sec] (mean)
+Time per request:       1493.113 [ms] (mean)
+Time per request:       1.493 [ms] (mean, across all concurrent requests)
+Transfer rate:          2564.51 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1   23 110.5     10    1043
+Processing:    17  395 1631.3     36   14895
+Waiting:        1  391 1631.7     32   14895
+Total:         19  417 1634.8     46   14918
+
+Percentage of the requests served within a certain time (ms)
+  50%     46
+  66%     51
+  75%     58
+  80%     68
+  90%    294
+  95%   1067
+  98%   7252
+  99%   7503
+ 100%  14918 (longest request)
