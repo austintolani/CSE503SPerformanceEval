@@ -1,0 +1,12 @@
+# Private IP address of resource to test
+privateIp=""
+
+#Run ab benchmark at increasing threads levels
+for((t=1;t<=128;t=t*2));do
+	echo "Running YCSB benchmark with ${t} threads...."
+	./bin/ycsb load mongodb -s -P workloads/workloada -p recordcount=10000 -threads "$t" -p mongodb.url="mongodb://${privateIp}:27017/bechmark${t}"
+	# Wait a moment before running another test
+	sleep 10
+	./bin/ycsb run mongodb -s -P workloads/workloada -p  mongodb.url="mongodb://${privateIp}:27017/bechmark${t}" -p operationcount=10000 -threads "$t"
+	sleep 30
+	done
