@@ -1,12 +1,12 @@
 # Private IP address of resource to test
-privateIp="ip-172-31-26-150.us-east-2.compute.internal"
+privateIp="ip-172-31-28-134.us-east-2.compute.internal"
 
 #Run ab benchmark at increasing concurrence levels
-ab -n 5000 -e output0.csv -g output0.tsv "http://${privateIp}/"
+ab -n 10000 -e output0.csv -g output0.tsv "http://${privateIp}/"
 sleep 60
 for((c=100;c<=1000;c=c+100));do
 	echo "Running ab benchmark with ${c} concurrent requests...."
-	ab -n 5000 -c "$c" -e "output${c}.csv" -g "output${c}.tsv" "http://${privateIp}/"
+	ab -n 10000 -c "$c" -e "output${c}.csv" -g "output${c}.tsv" "http://${privateIp}/"
 	# Wait a moment before running another test
 	sleep 60
 	done

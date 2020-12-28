@@ -1,8 +1,12 @@
+python3 abScraper.py t2Large/abOutput.txt
+python3 abScraper.py t3Large/abOutput.txt
+python3 abScraper.py m4Large/abOutput.txt
+python3 abScraper.py c4Large/abOutput.txt
 python3 abScraper.py t2Micro/abOutput.txt
 python3 abScraper.py t2Small/abOutput.txt
 python3 abScraper.py t2Medium/abOutput.txt
 python3 abScraper.py t2Large/abOutput.txt
 python3 abScraper.py t2Xlarge/abOutput.txt
-python3 abScraper.py t3Large/abOutput.txt
-python3 abScraper.py c4Large/abOutput.txt
-python3 abScraper.py m4Large/abOutput.txt
+python3 abScraper.py t2Large/abOutput.txt
+python3 abScraper.py t2Large2/abOutput.txt
+python3 abScraper.py t2Large3/abOutput.txt
